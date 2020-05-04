@@ -74,12 +74,12 @@ clean: CMakeFiles/Pong_Game_OOP.dir/clean
 CMakeFiles/Pong_Game_OOP.dir/all:
 	$(MAKE) -f CMakeFiles/Pong_Game_OOP.dir/build.make CMakeFiles/Pong_Game_OOP.dir/depend
 	$(MAKE) -f CMakeFiles/Pong_Game_OOP.dir/build.make CMakeFiles/Pong_Game_OOP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Pong_Game_OOP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Pong_Game_OOP"
 .PHONY : CMakeFiles/Pong_Game_OOP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Pong_Game_OOP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Pong_Game_OOP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Pong_Game_OOP.dir/rule

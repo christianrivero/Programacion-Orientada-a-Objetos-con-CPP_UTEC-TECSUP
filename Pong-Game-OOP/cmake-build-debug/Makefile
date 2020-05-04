@@ -123,6 +123,33 @@ Pong_Game_OOP/fast:
 	$(MAKE) -f CMakeFiles/Pong_Game_OOP.dir/build.make CMakeFiles/Pong_Game_OOP.dir/build
 .PHONY : Pong_Game_OOP/fast
 
+Automovil.o: Automovil.cpp.o
+
+.PHONY : Automovil.o
+
+# target to build an object file
+Automovil.cpp.o:
+	$(MAKE) -f CMakeFiles/Pong_Game_OOP.dir/build.make CMakeFiles/Pong_Game_OOP.dir/Automovil.cpp.o
+.PHONY : Automovil.cpp.o
+
+Automovil.i: Automovil.cpp.i
+
+.PHONY : Automovil.i
+
+# target to preprocess a source file
+Automovil.cpp.i:
+	$(MAKE) -f CMakeFiles/Pong_Game_OOP.dir/build.make CMakeFiles/Pong_Game_OOP.dir/Automovil.cpp.i
+.PHONY : Automovil.cpp.i
+
+Automovil.s: Automovil.cpp.s
+
+.PHONY : Automovil.s
+
+# target to generate assembly for a file
+Automovil.cpp.s:
+	$(MAKE) -f CMakeFiles/Pong_Game_OOP.dir/build.make CMakeFiles/Pong_Game_OOP.dir/Automovil.cpp.s
+.PHONY : Automovil.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Pong_Game_OOP"
+	@echo "... Automovil.o"
+	@echo "... Automovil.i"
+	@echo "... Automovil.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

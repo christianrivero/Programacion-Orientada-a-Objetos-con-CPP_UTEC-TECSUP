@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/Automovil.cpp" "/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/cmake-build-debug/CMakeFiles/Pong_Game_OOP.dir/Automovil.cpp.o"
   "/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/main.cpp" "/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/cmake-build-debug/CMakeFiles/Pong_Game_OOP.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

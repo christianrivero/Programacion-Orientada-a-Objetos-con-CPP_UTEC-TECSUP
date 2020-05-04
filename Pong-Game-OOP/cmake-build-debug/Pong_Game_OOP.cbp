@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/Automovil.cpp">
+			<Option target="Pong_Game_OOP"/>
+		</Unit>
+		<Unit filename="/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/Automovil.h">
+			<Option target="Pong_Game_OOP"/>
+		</Unit>
 		<Unit filename="/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/main.cpp">
 			<Option target="Pong_Game_OOP"/>
 		</Unit>
