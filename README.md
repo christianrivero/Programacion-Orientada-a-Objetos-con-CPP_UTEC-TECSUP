@@ -10,7 +10,7 @@ Es la **biblioteca** estándar en C++, y aunque no se ajusta a la POO, la comple
 
 STL se caracteriza por tener un bajo acomplamiento entre algoritmos y estructuras de datos, permitiendo generar un amplio nivel de combinación entre ellos, así como la reutilización de código.
 
-Auqnque C++ realiza la **gestión de memoria dinámica** de forma **manual**, STL facilita este proceso de forma eficiente, incluso con una mejor performance que C#, Python o Java, que lo hacen de forma **automática**.
+Aunque C++ realiza la **gestión de memoria dinámica** de forma **manual**, STL facilita este proceso de forma eficiente, incluso con una mejor performance que C#, Python o Java, que lo hacen de forma **automática**.
 
 > Existen bibliotecas estándar de C# y Java que están inspiradas en STL.
 
@@ -27,6 +27,8 @@ En la Industria del Software, C++ es mayormente usado para programación de Soft
 En menor incidencia en programación de Software de Aplicación, siendo útil cuando los recursos computacionales son escasos y se requiere eficiencia. Tal es el caso de juegos, simuladores, sistemas embebidos y aplicaciones de baja latencia.
 
 ## Fundamentos de la Programación Orientada a Objetos
+
+La relación entre objetos(basado en las [relaciones entre clases](#relaciones-entre-clases)) es la característica más relevante de la POO, ya que permite construir programas complejos.
 
 ### Pilares de la P.O.O:
 1. **Abstracción:** conceptualiza las características y comportamientos más importantes de una entidad del mundo real.
@@ -55,22 +57,22 @@ Es una plantilla o un tipo de dato, a partir de la clase se pueden construir ins
 El primer paso para definir una clase, es identificar los atributos y métodos deben ser incluidos. Se deben elegir los más importantes y necesarios.
 
 1. **Atributos, miembros o propiedades:**
-* representados por variables que pueden ser de tipos de datos básicos, colecciones u otras clases.
-* definen el [estado](#estado) de una clase.
-* no pueden modificarse directamente, por lo que deben declararse como _"```private```"_.
-* solo se deben modificar a través de métodos(_setter_).
+    * Representados por variables, que pueden ser de tipos de datos básicos, colecciones u otras clases.
+    * Definen el [estado](#estado) de una clase.
+    * No pueden modificarse directamente, por lo que deben declararse como _"```private```"_.
+    * Solo se deben modificar a través de métodos(_setter_).
 
 2. **Métodos, operaciones o funciones miembro:**
-* representados por funciones o métodos que actúan sonbre los atributos.
-* definen el [comportamiento](#comportamiento) de una clase
-* permiten acceder y modificar el estado de una clase, según sean métodos de acceso o métodos de modificación.
-* por lo general son del tipo `public`.
-* Existen 3 tipos de métodos:
-    1. **Métodos especiales:** dichos métodos no cuentan con valor de retorno, y mantienen la integridad de la clase al inicio y al final de la instanciación:
-        * Método Constructor: permite inicializar una clase. Se escribe igual al nombre de la clase.
-        * Método Destructor:libera los recursos adquiridos por la instanciación de la clase. Se escribe igual al nombre de la clase, pero con una virgulilla(~) antepuesta.
-    2. **Métodos de acceso:** permiten extraer o mostrar externamente el contenido de un atributo, en modo solo lectura.
-    3. **Métodos de nodificación:** permiten modificar externamente un atributo.
+    * Representados por funciones o métodos que actúan sonbre los atributos.
+    * Definen el [comportamiento](#comportamiento) de una clase.
+    * Permiten acceder y modificar el estado de una clase, según sean métodos de acceso o métodos de modificación.
+    * Por lo general son del tipo `public`.
+    * Existen 3 tipos de métodos:
+        1. **Métodos especiales:** dichos métodos no cuentan con valor de retorno, y mantienen la integridad de la clase al inicio y al final de la instanciación:
+            * **Método Constructor:** permite inicializar una clase. Se escribe igual al nombre de la clase. En C++ son dos:
+            * **Método Destructor:** libera los recursos adquiridos por la instanciación de la clase. Se escribe igual que el nombre de la clase, pero con una virgulilla(~) antepuesta.
+        2. **Métodos de acceso:** permiten extraer o mostrar externamente el contenido de un atributo, en modo solo lectura.
+        3. **Métodos de nodificación:** permiten modificar externamente un atributo.
 
 > La instanciación crea un objeto de una clase, y dicha instancia u objeto se copia en la memoria.
 
@@ -92,12 +94,44 @@ Un Objeto tiene 3 características:
 A partir de una clase se pueden generar muchos objetos basados en dicha clase.
 
 ### Relaciones entre Clases
+Las relaciones entre clases permiten la reutilización de código de una clase dentro de otra, y el desarrollo de estructuras complejas a partir de estructuras simples.
+
+<h5 align="center">
+     Representación UML de las Relaciones entre Clases en POO.<br><br>
+    <img src="https://user-images.githubusercontent.com/42509107/80978506-c333bc00-8deb-11ea-85a8-200a406c5c94.png"><br>
+</h5>
+
+Las Relaciones de clases están conformadas por 4 elementos:
+
+      i) La línea con un símbolo al extremo que indica el tipo de relación.
+     ii) El nombre de la relación.
+    iii) La ocurrencia de la relación.
+     iv) El rol de la clase.
+
 Existen 4 tipos de relaciones:
 
-1. Asoiación
-2. Composición
-3. Agregación
-4. Herencia 
+1. **Asociación:** es relación más común entre clases que usualmente no se daría, pero que por necesidad se requiere. Se expresa con un verbo que defina la relación. Los verbos más usados son _"usar"_ e _"incluir"_.
+
+<h5 align="center">
+     Ejemplo de Asociación: Un Cliente puede tener muchas Cuentas.<br><br>
+    <img src="https://user-images.githubusercontent.com/42509107/81521085-d246cc80-930b-11ea-96aa-7b0149d62e36.jpg"><br>
+</h5>
+
+2. **Agregación:** es un tipo especial de Asociación. Se le conoce como relación «_contiene a_» o «_es contenido en_», ambas clases son independiente entre sí, pero una de ellas (invitado) trabaje a orden de la otra clase (huésped). Esto permite que la clase huésped pueda utilizar características de la clase invitado para la ejecución de alguna tarea. Se representa con una línea con rombo en blanco;  el rombo está al lado del huésped y el invitado, al otro extremo.
+
+<h5 align="center">
+     Ejemplo de Agregación.<br><br>
+    <img src="https://user-images.githubusercontent.com/42509107/81522688-0a044300-9311-11ea-986f-3c797b1c2ca8.png"><br>
+</h5>
+
+3. **Composición:** es un tipo especial de Agregación. Se le conoce como relación «_es parte de_» o «_es un todo de_». Presenta una alta dependencia, las partes no pueden existir solas sin la existencia del todo. La clase «todo» utiliza características de la clase «parte» para realizar tareas. Se suele representar como una línea con un rombo negro, el rombo se encuentra al lado del todo; y la parte, al otro extremo.
+
+<h5 align="center">
+     Ejemplo de Composición:<br><br>
+    <img src="https://user-images.githubusercontent.com/42509107/81522693-0e306080-9311-11ea-8cc9-81961bdf0510.png"><br>
+</h5>
+
+4. **Herencia:** aaaa.....    
 
 ## Programación Orientada a Objetos en C++
 
@@ -119,6 +153,22 @@ class Employee {
         string getName();
         int getId();
 };
+```
+### La Clase Iostream
+Los objetos ```cin``` y ```cout``` son objetos de flujo estándar pertencientes a la clase **Iostream**. Los operadores ```>>``` y ```<<``` que interactúan con "_cin_" y "_cout_", pertenecen a la clase **Istream** y **Ostream**, respectivamente. Además la clase Iostream es **Clase Hija** de las clases Istream y Ostream, razón por la cual herada toda  la funcionalidad de estas. 
+
+Entonces, en vez importar las 3 bibliotecas:
+
+```c++
+#include <ostream>
+#include <istream>
+#include <iostream>
+```
+
+solo debemos importar una:
+
+```c++
+#include <iostream>
 ```
 
 ## Instalación y Configuración inicial:
@@ -143,3 +193,5 @@ class Employee {
 
 [ubuntu-download]: https://ubuntu.com/download/desktop
 [cLion-download]: https://www.jetbrains.com/clion/download
+[relaciones-poo]: https://user-images.githubusercontent.com/42509107/80978506-c333bc00-8deb-11ea-85a8-200a406c5c94.png
+[asociacion-ejemplo]: https://user-images.githubusercontent.com/42509107/81512255-db707300-92e4-11ea-99e0-f9c02c7189d0.png
