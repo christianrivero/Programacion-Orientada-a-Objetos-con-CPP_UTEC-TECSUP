@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/christian/Repos/Programacion-Orientada-a-Objetos-con-CPP_UTEC-TECSUP/Pong-Game-OOP/main.cpp
+iostream
+-
+
