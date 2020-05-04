@@ -67,8 +67,8 @@ El primer paso para definir una clase, es identificar los atributos y métodos d
 * por lo general son del tipo `public`.
 * Existen 3 tipos de métodos:
     1. **Métodos especiales:** dichos métodos no cuentan con valor de retorno, y mantienen la integridad de la clase al inicio y al final de la instanciación:
-        * Método Constructor: permite inicializar una clase. Es igual que el nombre de la clase.
-        * Método Destructor:libera los recursos adquiridos por la instanciación de la clase. Es igual al nombre de la clase, pero con una virgulilla(~) antepuesta.
+        * Método Constructor: permite inicializar una clase. Se escribe igual al nombre de la clase.
+        * Método Destructor:libera los recursos adquiridos por la instanciación de la clase. Se escribe igual al nombre de la clase, pero con una virgulilla(~) antepuesta.
     2. **Métodos de acceso:** permiten extraer o mostrar externamente el contenido de un atributo, en modo solo lectura.
     3. **Métodos de nodificación:** permiten modificar externamente un atributo.
 
@@ -91,11 +91,19 @@ Un Objeto tiene 3 características:
 ### Relación entre una Clase y un Objeto:
 A partir de una clase se pueden generar muchos objetos basados en dicha clase.
 
+### Relaciones entre Clases
+Existen 4 tipos de relaciones:
+
+1. Asoiación
+2. Composición
+3. Agregación
+4. Herencia 
+
 ## Programación Orientada a Objetos en C++
 
 ### Declarar una clase
 
-Para esto se necesita:
+Para esto se necesitan 2 archivos:
 1. En el header(archivo con extensión "_.h_") se realiza la declaración.
 2. En un archivo ".cpp" se realiza la implementación.
 
