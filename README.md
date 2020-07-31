@@ -3,12 +3,12 @@
 ## El Mundo de C++
 
 ### **C++**
-Lenguaje de Programación multipropósito, basado en el Lenguaje C, y es usado en programación de software de sistemas. C++ brinda soporte a la POO, a la Asbtracción de datos y a la Programación genérica.
+Lenguaje de Programación multipropósito, basado en el Lenguaje C y usado en programación de software de sistemas. C++ brinda soporte a la POO, a la Asbtracción de datos y a la Programación genérica.
 
 ### Standard Template Library: STL
-Es la **biblioteca** estándar en C++, y aunque no se ajusta a la POO, la complementa muy bien gracias a su estilo de programación genérico que tiene.
+Es la **biblioteca** estándar de C++, y aunque no se ajusta a la POO, la complementa muy bien gracias al estilo de programación genérico que tiene.
 
-STL se caracteriza por tener un bajo acomplamiento entre algoritmos y estructuras de datos, permitiendo generar un amplio nivel de combinación entre ellos, así como la reutilización de código.
+STL se caracteriza por tener un bajo acoplamiento entre algoritmos y estructuras de datos, permitiendo generar un amplio nivel de combinación entre ellos, así como la reutilización de código.
 
 Aunque C++ realiza la **gestión de memoria dinámica** de forma **manual**, STL facilita este proceso de forma eficiente, incluso con una mejor performance que C#, Python o Java, que lo hacen de forma **automática**.
 
@@ -28,23 +28,24 @@ En menor incidencia en programación de Software de Aplicación, siendo útil cu
 
 ## Fundamentos de la Programación Orientada a Objetos
 
-La relación entre objetos(basado en las [relaciones entre clases](#relaciones-entre-clases)) es la característica más relevante de la POO, ya que permite construir programas complejos.
+La relación entre objetos(basado en las [relaciones entre clases](#relaciones-entre-clases)) es la característica más relevante de la POO, ya que permite construir programas más complejos.
 
 ### Pilares de la P.O.O:
 1. **Abstracción:** conceptualiza las características y comportamientos más importantes de una entidad del mundo real.
 2. **Descomposición:** permite dividir un problema en elementos manejables.
 3. **Encapsulamiento:** une el estado y el comportamiento del objeto en una sola estructura, y ayuda a preservar la condición de invariancia de un objeto cuando no es necesario. Es decir, los atributos deben ser accedidos externamente solo a través de métodos.
-4. **Herencia:** los elementos de una Superclase(Clase Base) pueden ser reutilizados por una Subclase(Clase derivada).
+4. **Herencia:** permite la reutilización de código, ya que los elementos de una Superclase(Clase Base) pueden ser reutilizados por una Subclase(Clase derivada).
 5. **Polimorfismo:** las Subclases tienen un comportamiento dual, es decir, tienen la posibilidad de poder comportarse como la subclase o como la superclase, según sea la situación.
 
-> La **Herencia** permite la reutilización de código, lo cual facilita el desarrollo de ***Frameworks***, los cuales son un conjunto de bibliotecas que brinda soluciones casi terminadas.
+> La **Reutilización de Código**  facilita el desarrollo de ***Frameworks***, los cuales son un conjunto de bibliotecas que brinda soluciones casi terminadas.
 
 ### Ventajas de la P.O.O:
-* Facilita la organización del código.
 * Mejora la calidad del software.
 * Permite la reutilización de código.
-* Permite representar un programa en términos de objetos del mundo real, siendo fácil de entender.
+* Facilita la organización del código.
 * Está altamente difundido entre los L.P. modernos.
+* Permite representar un programa en términos de objetos del mundo real, siendo fácil de entender.
+
 
 ### Desventajas de la P.O.O:
 * No todo puede ser representado como objetos del mundo real.
@@ -54,7 +55,7 @@ Es una plantilla o un tipo de dato, a partir de la clase se pueden construir ins
 
 ### Elementos de una Clase:
 
-El primer paso para definir una clase, es identificar los atributos y métodos deben ser incluidos. Se deben elegir los más importantes y necesarios.
+El primer paso para definir una clase, es identificar los atributos y métodos que deben ser incluidos. Se deben elegir los más importantes y necesarios.
 
 1. **Atributos, miembros o propiedades:**
     * Representados por variables, que pueden ser de tipos de datos básicos, colecciones u otras clases.
